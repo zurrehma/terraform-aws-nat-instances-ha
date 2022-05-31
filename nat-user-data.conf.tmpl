@@ -88,3 +88,4 @@ runcmd:
  - [ iptables, -P, INPUT, DROP ]
  - [ sh, -c, "which AWSnycast || { cd /tmp && wget ${awsnycast_deb_url} && dpkg -i awsnycast_*.deb && rm *.deb; }" ]
  - [ systemctl, start, awsnycast ]
+ - [ sh, -c, "cd /tmp && curl \"https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_arm64/session-manager-plugin.deb\" -o \"session-manager-plugin.deb\" && dpkg -i session-manager-plugin.deb && rm *.deb "]

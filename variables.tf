@@ -10,7 +10,7 @@ variable "tags" {
 }
 
 variable "ami_name_pattern" {
-  default     = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
+  default     = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-*"
   description = "The name filter to use in data.aws_ami"
 }
 
